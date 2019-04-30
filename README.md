@@ -145,7 +145,9 @@ tree
 Modiffy setting.py
 
 ```bash
-#Add this lines
+
+#Add this new lines
+
 STATICFILES_DIRS = [(
     os.path.join(BASE_DIR, 'myproject/static_content')
 ),]
@@ -154,6 +156,7 @@ STATICFILES_DIRS = [(
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'myproject/temp')
 ]
+
 
 #And modiffy templates 
 #Add 'DIRS': [os.path.join(BASE_DIR, 'myproject/templates')]',
@@ -233,7 +236,7 @@ from termcolor import colored
 
 from myproject import settings
 
-#our page
+#definition of our page
 def app_render(request):
     print(settings.BASE_DIR)
     d = {'title': 'DICOM viewer','info':'DICOM SERVER SIDE RENDER'}
