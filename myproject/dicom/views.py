@@ -59,7 +59,7 @@ def ajax_server(request):
                     plt.close()
                     d['url'] = {'base64': 'data:image/png;base64,' + base64.b64encode(figure.getvalue()).decode()}
 
-                # medinfo.update(dcpimg.meta)
+                # medinfo.update(dcpimg.meta) 
 
             except Exception as e:
 
